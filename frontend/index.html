@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jara Market | Fresh Food. More Value.</title>
+<meta name="description" content="Order Nigerian food ingredients online and have them delivered to your door.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="demo-bar" role="note">Demonstration version: prices, products and the cart are sample data only. Orders cannot be placed yet.</div>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Jara Market home"><span class="mark" aria-hidden="true">J</span><span>Jara Market<small>Fresh Food. More Value.</small></span></a>
+    <form class="search" role="search" id="searchForm">
+      <label class="sr" for="q">Search products</label>
+      <input id="q" type="search" placeholder="Search rice, yam, tomatoes…" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <nav class="nav" aria-label="Main">
+      <a href="#categories">Categories</a>
+      <a href="#products">Shop</a>
+      <a href="#delivery">Delivery</a>
+      <button class="link-btn" type="button" data-demo="Customer accounts arrive in Phase 5.">Account</button>
+      <button class="cart-btn" id="openCart" type="button" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Your Favourite Market, Just a Click Away.</h1>
+        <p>Rice, beans, yam, fresh tomatoes, palm oil and more. Pick what you need, choose your quantity and we bring it to your door. Pay when it arrives.</p>
+        <a class="btn btn-yellow" href="#products">Shop Now</a>
+      </div>
+      <div class="hero-photo"><img src="images/hero.jpg" alt="Fresh Nigerian vegetables, tubers and grains" width="900" height="600"></div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="categories">
+    <h2>Shop by category</h2>
+    <div class="cat-grid" id="catGrid"></div>
+  </section>
+
+  <section class="wrap section" id="products">
+    <div class="sec-head">
+      <h2 id="prodTitle">Featured products</h2>
+      <button class="link-btn" id="clearFilter" type="button" hidden>Show all products</button>
+    </div>
+    <p class="note">Demonstration prices in naira (₦). Real prices and stock will come from the Jara Market database.</p>
+    <div class="prod-grid" id="prodGrid" aria-live="polite"></div>
+  </section>
+
+  <section class="band" aria-labelledby="whyTitle">
+    <div class="wrap section">
+      <h2 id="whyTitle">Why shop with Jara Market</h2>
+      <div class="why">
+        <div><h3>No market-day stress</h3><p>Skip the traffic and the crowds. Order from your phone in minutes.</p></div>
+        <div><h3>Clear prices and units</h3><p>Every price shows what you are paying for: per kg, per bunch, per bag or per piece.</p></div>
+        <div><h3>Pay on delivery</h3><p>No card needed. You pay when your food arrives.</p></div>
+        <div><h3>Honest availability</h3><p>If something is out of stock, we say so before you order.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="delivery">
+    <h2>Delivery information</h2>
+    <p class="note">Placeholder details. Delivery areas and fees will be set up in the admin dashboard in a later phase.</p>
+    <ul class="info">
+      <li><strong>Where:</strong> We will start with selected areas and grow from there.</li>
+      <li><strong>Fees:</strong> Calculated at checkout based on your area.</li>
+      <li><strong>Payment:</strong> Pay on delivery.</li>
+      <li><strong>Order status:</strong> You will be able to see your order's latest status. Live GPS tracking is not available.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div><strong>Jara Market</strong><p>Fresh Food. More Value.</p></div>
+    <div><strong>Customer support</strong><p>Phone and email: to be added before launch.</p></div>
+    <div><strong>Policies</strong><p><a href="#" data-demo="Policy pages are not written yet.">Delivery policy</a><br><a href="#" data-demo="Policy pages are not written yet.">Returns and refunds</a><br><a href="#" data-demo="Policy pages are not written yet.">Privacy</a></p></div>
+  </div>
+  <div class="wrap copy">© 2026 Jara Market. Demonstration build.</div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer-head"><h2>Your cart</h2><button type="button" id="closeCart" aria-label="Close cart">✕</button></div>
+  <div id="cartBody" class="drawer-body"></div>
+  <div class="drawer-foot" id="cartFoot"></div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
